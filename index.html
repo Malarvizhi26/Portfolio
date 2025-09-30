@@ -32,8 +32,7 @@
 
     header {
       background: rgba(107, 105, 105, 0.7);
-      color: inherit;
-      color:wheat
+      color: wheat;
       padding: 15px 0;
       text-align: center;
       position: sticky;
@@ -81,6 +80,18 @@
       margin-bottom: 20px;
       text-align: center;
       color: inherit;
+    }
+
+    /* --- Profile Picture --- */
+    .profile-pic {
+      display: block;
+      margin: 0 auto 15px;
+      width: 180px;
+      height: 180px;
+      border-radius: 5px;
+      object-fit: fill;
+      border: 7px solid #ff9800;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     /* --- Projects Section --- */
@@ -195,11 +206,6 @@
       transition: background 0.5s, color 0.5s;
     }
 
-    .contact-form input::placeholder,
-    .contact-form textarea::placeholder {
-      color: #555;
-    }
-
     .contact-form textarea {
       resize: none;
       height: 140px;
@@ -276,8 +282,10 @@
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
+    <!-- Profile Image -->
+    <img src="c:\Users\BAKKYALAKSHMI\Downloads\WhatsApp Image 2025-09-30 at 6.52.07 PM.jpeg" alt="Malarvizhi Profile Picture" class="profile-pic">
     <p style="text-align:center; max-width:700px; margin:auto;">
-      Hi, I'm <strong>Malarvizhi G</strong> 👋.  
+      Hi, I'm <strong>Malarvizhi G</strong>.  
       Computer Science Engineering student skilled in C, C++, Python, and Java, with strong knowledge of data structures, algorithms, and OOP. Experienced in software development, DBMS, and web technologies. Passionate about problem-solving and eager to explore machine learning, cloud computing, and full-stack development.
     </p>
   </section>
@@ -300,7 +308,6 @@ A system using blockchain and QR codes to provide consumers with reliable inform
 A system that uses AI to analyze a student’s learning patterns and performance. It provides personalized study recommendations, suggests topics to focus on, and helps improve learning efficiency and outcomes.</div>
         </div>
       </div>
-      
     </div>
   </section>
 
@@ -309,9 +316,9 @@ A system that uses AI to analyze a student’s learning patterns and performance
     <h2>Contact</h2>
     <div class="contact-container">
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:youremail@example.com">vizhigr2003@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/malarvizhi-g-ba466831b/</a></p>
-        <p><strong>GitHub:</strong> <a href="#">https://github.com/Malarvizhi26</a></p>
+        <p><strong>Email:</strong> <a href="mailto:vizhigr2003@gmail.com">vizhigr2003@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/malarvizhi-g-ba466831b/">linkedin.com/in/malarvizhi-g</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Malarvizhi26">github.com/Malarvizhi26</a></p>
       </div>
       <form class="contact-form" onsubmit="sendMessage(event)">
         <label for="name">Name:</label>
